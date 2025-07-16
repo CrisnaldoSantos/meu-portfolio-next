@@ -29,29 +29,21 @@ export default function HeroSection() {
       {/* Main Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          {/* Status Badge */}
-          <div className="flex justify-center">
-            <Badge variant="secondary" className="px-4 py-2 text-sm">
-              <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-              Disponível para novos projetos
-            </Badge>
-          </div>
-
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-                Desenvolvedor
+                Crisnaldo Carvalho
               </span>
               <br />
               <span className="bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">
-                Full Stack
+                Desenvolvedor Full Stack Sênior
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Criando experiências digitais modernas com{" "}
-              <span className="text-primary font-semibold">JavaScript</span>,{" "}
+              <span className="text-amber-900 font-semibold">JavaScript</span>,{" "}
               <span className="text-blue-500 font-semibold">React</span> e{" "}
               <span className="text-green-500 font-semibold">Node.js</span>
             </p>
