@@ -11,8 +11,8 @@ export default function HeroSection() {
 
       {/* Floating Cards for Visual Interest */}
       <div className="absolute top-20 left-10 animate-pulse">
-        <Card className="p-4 bg-primary/10 border-primary/20">
-          <div className="text-xs text-primary font-mono">React</div>
+        <Card className="p-4 bg-blue-400/10 border-blue-400/20">
+          <div className="text-xs text-blue-400 font-mono">React</div>
         </Card>
       </div>
       <div className="absolute top-40 right-20 animate-pulse delay-1000">
