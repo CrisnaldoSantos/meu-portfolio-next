@@ -53,10 +53,10 @@ const SocialSidebar = () => {
       {/* Right Sidebar - Email */}
       <div className="hidden md:flex fixed bottom-0 right-10 flex-col items-center space-y-6">
         <Link
-          href="mailto:seuemail@example.com"
+          href="mailto:crisnaldo.carvalho@outlook.com"
           className="font-fira text-sm tracking-widest [writing-mode:vertical-rl] text-slate hover:text-accent transition-all hover:-translate-y-1"
         >
-          seuemail@example.com
+          crisnaldo.carvalho@outlook.com
         </Link>
         <div className="w-px h-24 bg-slate"></div>
       </div>

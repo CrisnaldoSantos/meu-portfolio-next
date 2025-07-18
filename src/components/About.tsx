@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -46,7 +46,7 @@ const About = () => {
             <div className="relative w-64 h-64 group">
               <div className="absolute inset-0 bg-accent rounded-lg transform transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
               <Image
-                src="https://www.crisnaldocarvalho.com.br/assets/img/perfil.png"
+                src="https://github.com/CrisnaldoSantos.png?size=256"
                 alt="Foto de Crisnaldo Carvalho"
                 width={256}
                 height={256}
