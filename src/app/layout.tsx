@@ -13,9 +13,9 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Crisnaldo Carvalho - Desenvolvedor JavaScript",
+  title: "Crisnaldo Carvalho | Portfólio",
   description:
-    "Portfólio de Crisnaldo Carvalho, desenvolvedor JavaScript especializado na criação de experiências digitais excepcionais.",
+    "Portfólio de Crisnaldo Carvalho, desenvolvedor full-stack especialista em JavaScript/TypeScript.",
 };
 
 export default function RootLayout({
