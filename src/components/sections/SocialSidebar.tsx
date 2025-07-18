@@ -6,7 +6,7 @@ const SocialSidebar = () => {
       {/* Left Sidebar - Social Links */}
       <div className="hidden md:flex fixed bottom-0 left-10 flex-col items-center space-y-6">
         <Link
-          href="https://github.com/seu-usuario"
+          href="https://github.com/CrisnaldoSantos"
           target="_blank"
           rel="noopener noreferrer"
           className="text-slate hover:text-accent transition-all hover:-translate-y-1"
@@ -26,7 +26,7 @@ const SocialSidebar = () => {
           </svg>
         </Link>
         <Link
-          href="https://linkedin.com/in/seu-usuario"
+          href="https://www.linkedin.com/in/crisnaldo-carvalho-76741212b/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-slate hover:text-accent transition-all hover:-translate-y-1"

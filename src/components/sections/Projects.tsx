@@ -1,4 +1,3 @@
-import { Session } from "inspector/promises";
 import Link from "next/link";
 import SessionTitle from "../structure/section-title";
 
