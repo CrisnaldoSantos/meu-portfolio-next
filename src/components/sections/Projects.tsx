@@ -1,4 +1,6 @@
+import { Session } from "inspector/promises";
 import Link from "next/link";
+import SessionTitle from "../structure/section-title";
 
 const Projects = () => {
   const projects = [
@@ -31,10 +33,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-lightest-slate mb-8 font-fira flex items-center">
-          <span className="text-accent mr-3">03.</span> Projetos
-          <span className="flex-grow h-px bg-slate-700 ml-4"></span>
-        </h2>
+        <SessionTitle sectionNumber="04" title="Projetos" />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div

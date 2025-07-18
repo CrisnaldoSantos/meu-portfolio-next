@@ -3,16 +3,14 @@
 import { useAboutMeData } from "@/hooks/useAboutMeData";
 import Image from "next/image";
 import HookValidateGuard from "../guards/hook-validate-guard";
+import SessionTitle from "../structure/section-title";
 
 const About = () => {
   const { aboutMeData, loading, error } = useAboutMeData();
   return (
     <section id="about" className="py-24">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-lightest-slate mb-8 font-fira flex items-center">
-          <span className="text-accent mr-3">01.</span> Sobre Mim
-          <span className="flex-grow h-px bg-slate-700 ml-4"></span>
-        </h2>
+        <SessionTitle sectionNumber="01" title="Sobre Mim" />
         <HookValidateGuard error={error} loading={loading}>
           <div className="grid md:grid-cols-5 gap-10">
             <div

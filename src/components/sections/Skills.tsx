@@ -1,3 +1,5 @@
+import SessionTitle from "../structure/section-title";
+
 const Skills = () => {
   const skills = [
     {
@@ -141,10 +143,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-24">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-lightest-slate mb-8 font-fira flex items-center">
-          <span className="text-accent mr-3">02.</span> Habilidades
-          <span className="flex-grow h-px bg-slate-700 ml-4"></span>
-        </h2>
+        <SessionTitle sectionNumber="03" title="Habilidades" />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {skills.map((skill, index) => (
             <div

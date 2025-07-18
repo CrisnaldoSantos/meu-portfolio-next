@@ -59,22 +59,28 @@ const Header = () => {
             <span className="text-accent">01.</span> Sobre
           </button>
           <button
+            onClick={() => scrollToSection("experience")}
+            className="font-fira text-lightest-slate hover:text-accent transition-colors duration-300 link-underline"
+          >
+            <span className="text-accent">02.</span> Experiência
+          </button>
+          <button
             onClick={() => scrollToSection("skills")}
             className="font-fira text-lightest-slate hover:text-accent transition-colors duration-300 link-underline"
           >
-            <span className="text-accent">02.</span> Habilidades
+            <span className="text-accent">03.</span> Habilidades
           </button>
           <button
             onClick={() => scrollToSection("projects")}
             className="font-fira text-lightest-slate hover:text-accent transition-colors duration-300 link-underline"
           >
-            <span className="text-accent">03.</span> Projetos
+            <span className="text-accent">04.</span> Projetos
           </button>
           <button
             onClick={() => scrollToSection("contact")}
             className="font-fira text-lightest-slate hover:text-accent transition-colors duration-300 link-underline"
           >
-            <span className="text-accent">04.</span> Contato
+            <span className="text-accent">05.</span> Contato
           </button>
         </div>
 
@@ -108,6 +114,12 @@ const Header = () => {
             className="block text-lightest-slate hover:text-accent transition-colors duration-300"
           >
             Sobre
+          </button>
+          <button
+            onClick={() => scrollToSection("experience")}
+            className="block text-lightest-slate hover:text-accent transition-colors duration-300"
+          >
+            Experiência
           </button>
           <button
             onClick={() => scrollToSection("skills")}
