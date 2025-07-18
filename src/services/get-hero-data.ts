@@ -11,6 +11,7 @@ export const GET_HERO_DATA = gql`
       presentation
       title
       description
+      buttonLabel
     }
   }
 `;
@@ -18,6 +19,7 @@ export const GET_HERO_DATA = gql`
 export const getHeroData = async (): Promise<MyQueryResponse> => {
   try {
     const data = await hygraphClient.request<MyQueryResponse>(GET_HERO_DATA);
+    console.log("Dados do Hero:", data);
     return data;
   } catch (error) {
     console.error("Erro ao buscar dados do Hero:", error);

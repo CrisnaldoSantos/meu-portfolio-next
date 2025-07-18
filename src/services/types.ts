@@ -6,6 +6,7 @@ export interface Hero {
   presentation: string;
   description: string;
   title: string;
+  buttonLabel: string;
 }
 
 export interface HeroesQueryResponse {

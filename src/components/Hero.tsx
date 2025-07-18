@@ -98,7 +98,7 @@ const Hero = () => {
                 onClick={scrollToProjects}
                 className="inline-block mt-8 px-8 py-4 border border-accent text-accent font-fira rounded hover:bg-accent hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-900 focus:ring-accent transition-all duration-300"
               >
-                Veja meus projetos!
+                {heroData?.buttonLabel || "Veja meus projetos a!"}
               </button>
             </>
           )}
