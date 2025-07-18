@@ -1,5 +1,5 @@
 export interface ErrorGuardProps {
-  error?: string;
+  error?: string | null;
   children: React.ReactNode;
 }
 
