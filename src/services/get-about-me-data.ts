@@ -1,6 +1,6 @@
 import { gql } from "graphql-request";
 import { hygraphClient } from "../lib/hygraph";
-import { AboutMeQueryResponse } from "../lib/types";
+import { AboutMeQueryResponse } from "./types";
 
 export const GET_ABOUT_ME_QUERY = gql`
   query AboutMeQuery {

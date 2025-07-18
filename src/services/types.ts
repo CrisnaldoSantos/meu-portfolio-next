@@ -1,5 +1,6 @@
 // Tipos para os dados do HygraphCMS
 
+// Tipos para Hero
 export interface Hero {
   id: string;
   phrases: string[];
@@ -11,4 +12,23 @@ export interface Hero {
 
 export interface HeroesQueryResponse {
   heroes: Hero[];
+}
+
+// Tipos para AboutMe
+export interface AboutMeImage {
+  url: string;
+}
+
+export interface AboutMeResume {
+  html: string;
+}
+
+export interface AboutMe {
+  id: string;
+  image: AboutMeImage;
+  resume: AboutMeResume;
+}
+
+export interface AboutMeQueryResponse {
+  aboutMes: AboutMe[];
 }
