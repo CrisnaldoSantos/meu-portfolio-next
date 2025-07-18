@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useHeroData } from "../hooks/useHeroData";
+import HookValidateGuard from "./guards/hook-validate-guard";
 
 const Hero = () => {
   const [typingText, setTypingText] = useState("");
@@ -68,18 +69,7 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex flex-col justify-center">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl">
-          {loading ? (
-            <div className="animate-pulse">
-              <div className="h-6 bg-slate-700 rounded w-48 mb-4"></div>
-              <div className="h-16 bg-slate-700 rounded w-full mb-2"></div>
-              <div className="h-12 bg-slate-700 rounded w-3/4 mb-6"></div>
-              <div className="h-20 bg-slate-700 rounded w-full"></div>
-            </div>
-          ) : error ? (
-            <div className="text-red-400">
-              <p>Erro ao carregar dados: {error}</p>
-            </div>
-          ) : (
+          <HookValidateGuard error={error} loading={loading}>
             <>
               <p className="font-fira text-accent text-lg mb-4">
                 {heroData?.presentation || "Olá, meu nome é"}
@@ -87,7 +77,7 @@ const Hero = () => {
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-lightest-slate">
                 {heroData?.title || "Crisnaldo Carvalho."}
               </h1>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-slate mt-2">
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-slate mt-2 min-h-32">
                 <span>{typingText}</span>
                 <span className="typing-cursor"></span>
               </h2>
@@ -101,7 +91,7 @@ const Hero = () => {
                 {heroData?.buttonLabel || "Veja meus projetos a!"}
               </button>
             </>
-          )}
+          </HookValidateGuard>
         </div>
       </div>
     </section>
