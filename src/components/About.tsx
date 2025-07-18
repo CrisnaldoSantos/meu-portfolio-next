@@ -1,9 +1,11 @@
 "use client";
 
+import { useAboutMeData } from "@/hooks/useAboutMeData";
 import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+  const { aboutMeData, loading, error } = useAboutMeData();
   return (
     <section id="about" className="py-24">
       <div className="container mx-auto px-6">

@@ -1,10 +1,9 @@
 import { gql } from "graphql-request";
 import { hygraphClient } from "../lib/hygraph";
-import { MyQueryResponse } from "./types";
+import { HeroesQueryResponse } from "./types";
 
-// Query para buscar dados do Hero
 export const GET_HERO_DATA = gql`
-  query MyQuery {
+  query HeroQuery {
     heroes(first: 1) {
       id
       phrases
@@ -16,9 +15,11 @@ export const GET_HERO_DATA = gql`
   }
 `;
 
-export const getHeroData = async (): Promise<MyQueryResponse> => {
+export const getHeroData = async (): Promise<HeroesQueryResponse> => {
   try {
-    const data = await hygraphClient.request<MyQueryResponse>(GET_HERO_DATA);
+    const data = await hygraphClient.request<HeroesQueryResponse>(
+      GET_HERO_DATA
+    );
     console.log("Dados do Hero:", data);
     return data;
   } catch (error) {

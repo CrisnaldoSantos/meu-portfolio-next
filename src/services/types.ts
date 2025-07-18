@@ -12,7 +12,3 @@ export interface Hero {
 export interface HeroesQueryResponse {
   heroes: Hero[];
 }
-
-export interface MyQueryResponse {
-  heroes: Hero[];
-}
