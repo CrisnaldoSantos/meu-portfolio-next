@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useHeroData } from "../hooks/useHeroData";
-import HookValidateGuard from "./guards/hook-validate-guard";
+import { useHeroData } from "../../hooks/useHeroData";
+import HookValidateGuard from "../guards/hook-validate-guard";
 
 const Hero = () => {
   const [typingText, setTypingText] = useState("");

@@ -2,7 +2,7 @@
 
 import { useAboutMeData } from "@/hooks/useAboutMeData";
 import Image from "next/image";
-import HookValidateGuard from "./guards/hook-validate-guard";
+import HookValidateGuard from "../guards/hook-validate-guard";
 
 const About = () => {
   const { aboutMeData, loading, error } = useAboutMeData();
