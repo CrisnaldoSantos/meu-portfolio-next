@@ -16,7 +16,7 @@ const Contact = () => {
           está sempre aberta. Farei o meu melhor para responder a você!
         </p>
         <Link
-          href="mailto:seuemail@example.com"
+          href="mailto:crisnaldo.carvalho@outlook.com"
           className="inline-block px-8 py-4 border border-accent text-accent font-fira rounded hover:bg-accent hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-900 focus:ring-accent transition-all duration-300"
         >
           Diga Olá
