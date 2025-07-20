@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
-        <SessionTitle sectionNumber="04" title="Projetos" />
+        <SessionTitle sectionNumber="05" title="Projetos" />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div

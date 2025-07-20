@@ -65,7 +65,7 @@ const Header = () => {
             <span className="text-accent">02.</span> Experiência
           </button>
           <button
-            onClick={() => scrollToSection("skills")}
+            onClick={() => scrollToSection("skills-categories")}
             className="font-fira text-lightest-slate hover:text-accent transition-colors duration-300 link-underline"
           >
             <span className="text-accent">03.</span> Habilidades
@@ -122,7 +122,7 @@ const Header = () => {
             Experiência
           </button>
           <button
-            onClick={() => scrollToSection("skills")}
+            onClick={() => scrollToSection("skills-categories")}
             className="block text-lightest-slate hover:text-accent transition-colors duration-300"
           >
             Habilidades
