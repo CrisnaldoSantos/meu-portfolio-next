@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getAboutMeData } from "../services/get-about-me-data";
-import { AboutMe } from "../lib/types";
+import { AboutMe } from "@/services/types";
 
 interface UseAboutMeDataReturn {
   aboutMeData: AboutMe | null;

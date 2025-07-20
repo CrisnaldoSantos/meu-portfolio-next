@@ -1,6 +1,5 @@
 import { GraphQLClient } from "graphql-request";
 
-// Configure sua URL do HygraphCMS aqui
 const HYGRAPH_URL = process.env.NEXT_PUBLIC_HYGRAPH_URL || "";
 
 if (!HYGRAPH_URL) {

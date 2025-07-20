@@ -20,7 +20,6 @@ export const getHeroData = async (): Promise<HeroesQueryResponse> => {
     const data = await hygraphClient.request<HeroesQueryResponse>(
       GET_HERO_DATA
     );
-    console.log("Dados do Hero:", data);
     return data;
   } catch (error) {
     console.error("Erro ao buscar dados do Hero:", error);

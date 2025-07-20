@@ -32,3 +32,19 @@ export interface AboutMe {
 export interface AboutMeQueryResponse {
   aboutMes: AboutMe[];
 }
+
+// Tipos para Experience
+export interface Experience {
+  id: number;
+  company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  technologies?: string[];
+  order: number;
+}
+
+export interface ExperienceQueryResponse {
+  experiences: Experience[];
+}
