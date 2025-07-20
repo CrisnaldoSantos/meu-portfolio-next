@@ -59,3 +59,17 @@ export interface SkillCategory {
 export interface SkillsQueryResponse {
   skillCategories: SkillCategory[];
 }
+
+// Tipos para Projects
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+}
+
+export interface ProjectsQueryResponse {
+  projects: Project[];
+}
