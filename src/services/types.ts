@@ -35,7 +35,7 @@ export interface AboutMeQueryResponse {
 
 // Tipos para Experience
 export interface Experience {
-  id: number;
+  id: string;
   company: string;
   position: string;
   startDate: string;
@@ -47,4 +47,15 @@ export interface Experience {
 
 export interface ExperienceQueryResponse {
   experiences: Experience[];
+}
+
+// Tipos para Skills
+export interface SkillCategory {
+  id: string;
+  title: string;
+  skills: string[];
+}
+
+export interface SkillsQueryResponse {
+  skillCategories: SkillCategory[];
 }

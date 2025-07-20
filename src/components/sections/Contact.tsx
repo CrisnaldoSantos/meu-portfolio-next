@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="py-24 text-center">
       <div className="container mx-auto px-6">
         <h2 className="font-fira text-accent mb-2">
-          06. Qual o próximo passo?
+          05. Qual o próximo passo?
         </h2>
         <h3 className="font-fira text-4xl md:text-5xl font-bold text-lightest-slate mb-4">
           Entre em Contato
