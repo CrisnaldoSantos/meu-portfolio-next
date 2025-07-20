@@ -11,7 +11,11 @@
   
   <h3>🌟 Portfólio moderno e responsivo criado com as mais recentes tecnologias</h3>
   
-  
+  <p>
+    <a href="https://www.crisnaldocarvalho.com.br" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Ver_Live-www.crisnaldocarvalho.com.br-success?style=for-the-badge" alt="Ver projeto ao vivo" />
+    </a>
+  </p>
   
 </div>
 
@@ -20,6 +24,8 @@
 ## ✨ Sobre o Projeto
 
 Este é meu portfólio pessoal, desenvolvido para mostrar minhas habilidades como desenvolvedor. O site apresenta uma interface moderna, animações suaves e um design responsivo que proporciona uma excelente experiência do usuário.
+
+🌐 **[Ver projeto ao vivo em www.crisnaldocarvalho.com.br](https://www.crisnaldocarvalho.com.br)**
 
 ### 🎯 Principais Características
 
@@ -228,7 +234,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - **Email:** crisnaldo.carvalho@outlook.com
 - **LinkedIn:** [Meu Perfil](https://www.linkedin.com/in/crisnaldo-carvalho-76741212b/)
 - **GitHub:** [CrisnaldoSantos](https://github.com/CrisnaldoSantos)
-- **Portfolio:** [Portifolio (antigo)](https://www.crisnaldocarvalho.com.br)
+- **Portfolio:** [www.crisnaldocarvalho.com.br](https://www.crisnaldocarvalho.com.br)
 
 ---
 
