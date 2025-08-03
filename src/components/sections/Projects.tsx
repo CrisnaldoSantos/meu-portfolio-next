@@ -2,20 +2,21 @@
 import Link from "next/link";
 import { FolderOpen, Github, ExternalLink } from "lucide-react";
 import SessionTitle from "../structure/section-title";
-import HookValidateGuard from "../guards/hook-validate-guard";
-import { useProjectsData } from "../../hooks/useProjectsData";
+import { Project } from "../../services/types";
 
-const Projects = () => {
-  const { projectsData, loading, error } = useProjectsData();
+interface ProjectsProps {
+  projectsData?: Project[] | null;
+}
 
+const Projects = ({ projectsData = [] }: ProjectsProps) => {
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
-        <SessionTitle sectionNumber="05" title="Projetos" />
+        <SessionTitle sectionNumber="04" title="Projetos" />
 
-        <HookValidateGuard loading={loading} error={error}>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projectsData.map((project, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projectsData && projectsData.length > 0 ? (
+            projectsData.map((project, index) => (
               <div
                 key={project.id || index}
                 className="bg-light-navy rounded-lg overflow-hidden group flex flex-col"
@@ -57,9 +58,13 @@ const Projects = () => {
                   ))}
                 </footer>
               </div>
-            ))}
-          </div>
-        </HookValidateGuard>
+            ))
+          ) : (
+            <p className="text-slate text-center col-span-full">
+              Nenhum projeto encontrado no momento.
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );
